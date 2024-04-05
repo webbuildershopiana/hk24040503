@@ -71,7 +71,7 @@
 
 <style type="text/css">
 
-* { box-sizing: border-box; } body {margin: 0;}#iz9o{background-color:grey;}.hamburger1{display:none;}.bar1{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}#i222rh{text-align:left;}#igczvy{height:10px;width:10px;border-radius:100%;background-color:black;}#iabfh7{height:10px;width:10px;border-radius:100%;background-color:black;}#iuttoh{height:10px;width:10px;border-radius:100%;background-color:black;}#i001pf{height:80vh;}#imzzzd{height:80vh;}#ijo0h9{height:80vh;}#if2a0c{background-color:white;}#iaht7k{height:100px;width:100px;}#i0nk0v{height:100px;width:100px;}#id20tg{height:100px;width:100px;}#i8nlpi{font-family:Arial, Helvetica, sans-serif;font-size:larger;opacity:70%;}#i4cz7d{background-color:#607980;}#iiv45e{background-color:rgba(0, 0, 0, 0.05);}@keyframes fadeEffect{from{opacity:0;}to{opacity:1;}}@media only screen and (max-width: 992px){.hamburger1{display:block;cursor:pointer;}.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
+* { box-sizing: border-box; } body {margin: 0;}#iz9o{background-color:grey;}.hamburger1{display:none;}.bar1{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}#i222rh{text-align:left;}#igczvy{height:10px;width:10px;border-radius:100%;background-color:black;}#iabfh7{height:10px;width:10px;border-radius:100%;background-color:black;}#iuttoh{height:10px;width:10px;border-radius:100%;background-color:black;}#i001pf{height:80vh;}#imzzzd{height:80vh;}#ijo0h9{height:80vh;}#if2a0c{background-color:white;}#iaht7k{height:100px;width:100px;}#i0nk0v{height:100px;width:100px;}#id20tg{height:100px;width:100px;}#i8nlpi{font-family:Arial, Helvetica, sans-serif;font-size:larger;opacity:70%;}#i4cz7d{background-color:#607980;}#iiv45e{background-color:rgba(0, 0, 0, 0.05);}@keyframes fadeEffect{from{opacity:0;}to{opacity:1;}}@media only screen and (max-width: 992px){.hamburger1{display:block;cursor:pointer;}.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}.hamburger2.active .bar2:nth-child(2){opacity:0;}.hamburger2.active .bar2:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger2.active .bar2:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
 
 </style>
 
@@ -80,7 +80,7 @@
  <head></head>
  <body id="iz9o">
   <div data-gjs-type="ui-header" id="ibzngi">
-   <nav class="w-100 navbar bg-white navbar-expand-lg navbar-light">
+   <nav id="ilxb" class="w-100 navbar bg-white navbar-expand-lg navbar-light">
     <div class="container-fluid">
      <a href="#" class="navbar-brand">Shopiana</a>
      <div class="hamburger1">
@@ -88,13 +88,13 @@
      </div>
      <div id="collapseId-2" class="collapse navbar-collapse">
       <div class="navbar-nav">
-       <a href="#" class="nav-item nav-link active">Home</a><a href="#" class="nav-item nav-link">Profile</a>
+       <a href="#" id="ik76a" class="nav-item nav-link active">Home</a><a href="#" id="icazj" class="nav-item nav-link">About</a>
        <div class="nav-item dropdown">
-        <a href="#" data-bs-toggle="dropdown" id="i222rh" class="nav-link dropdown-toggle">Messages</a>
-        <div class="dropdown-menu">
-         <a href="#" class="dropdown-item">Inbox</a><a href="#" class="dropdown-item">Sent</a><a href="#" class="dropdown-item">Drafts</a>
+        <a href="#" data-bs-toggle="dropdown" id="i222rh" class="nav-link dropdown-toggle">Services</a>
+        <div id="i70fr" class="dropdown-menu">
+         <a href="#" id="igelc" class="dropdown-item">Services1</a><a href="#" id="ijcwpv" class="dropdown-item">Services2</a><a href="#" id="ia08fe" class="dropdown-item">Services3</a>
         </div>
-       </div><a href="#" class="nav-item nav-link">About</a>
+       </div><a href="#" id="ibsv3" class="nav-item nav-link">Contact Us</a>
       </div>
       <div class="navbar-nav ms-auto">
        <a href="#" class="nav-item nav-link">Login</a>
@@ -224,7 +224,7 @@
      </div>
     </div>
    </div>
-   <div class="container-fluid bg-white d-flex justify-content-center align-items-center py-5" id="iw3itt">
+   <div id="iw3itt" class="container-fluid bg-white d-flex justify-content-center align-items-center py-5">
     <div class="container-fluid d-flex justify-content-center align-items-center">
      <div class="bg-white w-100 p-5">
       <div class="text-center">
@@ -235,7 +235,7 @@
        <form action="" id="iued78">
         <label for="exampleInputEmail1" class="form-label">Enter your email here*</label>
         <div class="input-group">
-         <input type="email" required inputmode="email" class="form-control w-75 py-3"><button type="submit" class="btn w-25 py-3 text-white" id="i4cz7d">Sign Up</button>
+         <input type="email" required inputmode="email" class="form-control w-75 py-3"><button type="submit" id="i4cz7d" class="btn w-25 py-3 text-white">Sign Up</button>
          <p class="card-text"><small class="text-muted">Thanks for submitting !!</small></p>
         </div>
        </form>
@@ -243,7 +243,7 @@
      </div>
     </div>
    </div>
-   <footer class="text-center text-lg-start text-muted w-100 bg-white" id="ie91gn">
+   <footer id="ie91gn" class="text-center text-lg-start text-muted w-100 bg-white">
     <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
      <!-- Left -->
@@ -303,7 +303,7 @@
       </div><!-- Grid row -->
      </div>
     </section><!-- Section: Links  --><!-- Copyright -->
-    <div class="text-center p-4" id="iiv45e">
+    <div id="iiv45e" class="text-center p-4">
      © 2021 Copyright: <a href="https://mdbootstrap.com/" class="text-reset fw-bold">Shopiana.com</a>
     </div><!-- Copyright -->
    </footer><!-- Footer -->
