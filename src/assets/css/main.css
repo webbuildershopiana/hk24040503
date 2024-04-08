@@ -1,0 +1,423 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+     :root {
+        /*
+    *
+    * This all are the rgb values which are used inside the
+    * tailwind config file and custom plugins css file
+    *
+    */
+        /*
+    * primary color
+    */
+        --color-accent: 0, 159, 127;
+        /*
+    * Hover state color of primary color
+    */
+        --color-accent-hover: 1, 147, 118;
+        /*
+    * shade of primary color
+    */
+        --color-accent-200: 204, 236, 229;
+        /*
+    * shade of primary color
+    */
+        --color-accent-300: 153, 217, 204;
+        /*
+    * shade of primary color
+    */
+        --color-accent-400: 77, 188, 165;
+        /*
+    * shade of primary color
+    */
+        --color-accent-500: 0, 159, 127;
+        /*
+    * shade of primary color
+    */
+        --color-accent-600: 0, 143, 114;
+        /*
+    * shade of primary color
+    */
+        --color-accent-700: 0, 119, 95;
+        /*
+    * light color
+    */
+        --color-light: 255, 255, 255;
+        /* light Hover */
+        --color-light-hover: 0, 0, 0;
+        /*
+    * dark color
+    */
+        --color-dark: 0, 0, 0;
+        /*
+    * Black muted color
+    */
+        --color-muted-black: 17, 17, 17;
+        /*
+    * Current color
+    */
+        --color-current: currentColor;
+        /*
+    *
+    * TEXT colors
+    *
+    */
+        /*
+    * text color used for body/base text -> gray-500
+    */
+        --text-base: 107, 114, 128;
+        /*
+    * dark base text color  -> gray-600
+    */
+        --text-base-dark: 75, 85, 99;
+        /*
+    * muted text color -> gray-400
+    */
+        --text-muted: 156, 163, 175;
+        /*
+    * light muted text color - gray-300
+    */
+        --text-muted-light: 209, 213, 219;
+        /*
+    * text color used for heading text -> gray-700
+    */
+        --text-sub-heading: 55, 65, 81;
+        /*
+    * text color used for heading text -> gray-800
+    */
+        --text-heading: 31, 41, 55;
+        /*
+    * text color used for heading text -> gray-900
+    */
+        --text-bolder: 31, 41, 55;
+        /*
+    *
+    * border colors
+    *
+    */
+        /*
+    * border color 50
+    */
+        --color-border-50: 249, 250, 251;
+        /*
+    * border color 100
+    */
+        --color-border-100: 243, 244, 246;
+        /*
+    * border color 200
+    */
+        --color-border-200: 229, 231, 235;
+        /*
+    * border base color which is 300
+    */
+        --color-border-base: 209, 213, 219;
+        /*
+    * border color 400
+    */
+        --color-border-400: 156, 163, 175;
+        /*
+    *
+    * Tailwind default gray color override
+    *
+    */
+        /*
+    * gray-50
+    */
+        --color-gray-50: 249, 250, 251;
+        /*
+    * gray-100
+    */
+        --color-gray-100: 243, 244, 246;
+        /*
+    * gray-200
+    */
+        --color-gray-200: 229, 231, 235;
+        /*
+    * gray-300
+    */
+        --color-gray-300: 209, 213, 219;
+        /*
+    * gray-400
+    */
+        --color-gray-400: 156, 163, 175;
+        /*
+    * gray-500
+    */
+        --color-gray-500: 107, 114, 128;
+        /*
+    * gray-600
+    */
+        --color-gray-600: 75, 85, 99;
+        /*
+    * gray-700
+    */
+        --color-gray-700: 55, 65, 81;
+        /*
+    * gray-800
+    */
+        --color-gray-800: 31, 41, 55;
+        /*
+    * gray-900
+    */
+        --color-gray-900: 31, 41, 55;
+        /*
+    * orange-50
+    */
+        --color-orange-50: 255, 247, 237;
+        /*
+    * orange-100
+    */
+        --color-orange-100: 255, 237, 213;
+        /*
+    * orange-200
+    */
+        --color-orange-200: 254, 215, 170;
+        /*
+    * orange-300
+    */
+        --color-orange-300: 253, 186, 116;
+        /*
+    * orange-400
+    */
+        --color-orange-400: 251, 146, 60;
+        /*
+    * orange-500
+    */
+        --color-orange-500: 249, 115, 22;
+        /*
+    * orange-600
+    */
+        --color-orange-600: 234, 88, 12;
+        /*
+    * orange-700
+    */
+        --color-orange-700: 194, 65, 12;
+        /*
+    * orange-800
+    */
+        --color-orange-800: 154, 52, 18;
+        /*
+    * orange-900
+    */
+        --color-orange-900: 124, 45, 18;
+    }
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
+    body {
+        @apply font-body;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-heading;
+    }
+    a {
+        @apply no-underline;
+    }
+}
+
+@layer utilities {
+    .header-bg-color {
+        background-color: hotpink;
+    }
+    .header-text-color {
+        color: white;
+    }
+    .bottom-header-bg-color {
+        background-color: blue;
+    }
+    .bottom-header-text-color {
+        color: yellow;
+    }
+    .footer-bg-color {
+        background-color: orange;
+    }
+    .footer-text-color {
+        color: blue;
+    }
+}
+
+@import './custom-plugins.css';
+.style-module_emptyIcons__Bg-FZ {
+    display: flex !important;
+}
+
+
+/* 
+.starRatingWrap {
+  display: inline-block;
+  touch-action: none;
+}
+
+
+.simpleStarRating {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  touch-action: none;
+} */
+
+
+/* .fillIcons {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+} */
+
+
+/* .emptyIcons {
+  display: inline-block;
+} */
+
+
+/* 
+.tooltip {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #333;
+  color: #fff;
+  vertical-align: middle;
+  border-radius: 5px;
+} */
+
+.rating_demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    width: 100%;
+    /* padding: 2rem; */
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 10%);
+    margin: 0.5rem 0 1rem;
+    border-radius: 0.25rem;
+}
+
+.rating_box {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 20%);
+    margin-bottom: 2rem;
+}
+
+
+/* UTILITY CLASSE FOR SHOWING SCROLLBAR ONLY WHILE SCROLLING  */
+
+
+/* Show the scrollbar when hovering over the container */
+
+.scrollbar-on-hover::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-on-hover:hover::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    display: block;
+}
+
+
+/* Show the scrollbar thumb and track when hovering over them */
+
+.scrollbar-on-hover:hover::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.scrollbar-on-hover:hover::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.overflow-y-overlay {
+    overflow-y: overlay;
+}
+
+
+/* SWIPER IN PRODUCT DETAILS */
+
+.swiper-slide-image div img {
+    height: 100%;
+    max-height: 90vh;
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#productGallery div div {
+    display: flex;
+    align-items: flex-start;
+}
+
+#productGallery div div span {
+    height: 100% !important;
+}
+
+.react-transform-wrapper {
+    height: 100% !important;
+}
+
+.react-transform-component {
+    height: 100% !important;
+}
+
+@media screen and (min-width: 768px) {
+    #productGalleryThumbs {
+        height: 100%;
+        width: 100%;
+        overflow: visible;
+    }
+    #productGalleryThumbs div {
+        flex-direction: column !important;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    #productGalleryThumbs div div {
+        width: 100% !important;
+        margin-right: 0px !important;
+        height: 18.6%;
+        min-height: 18.6%;
+        margin-bottom: 0.5rem;
+        max-width: 5.1rem;
+        max-height: 26px !important;
+    }
+    #productGalleryThumbs div div span {
+        min-height: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 0px) {
+    #productGalleryThumbs div {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #productGalleryThumbs div div {
+        max-width: 7rem;
+        max-height: 5.2rem;
+        min-height: 5.1rem;
+        margin-top: 0.8rem;
+    }
+    #productGalleryThumbs div div div {
+        margin-top: 0 !important;
+    }
+    #productGalleryThumbs div div span {
+        width: 100%;
+    }
+}
+
+.bg-custom-light {
+    background-color: white !important;
+}* { box-sizing: border-box; } body {margin: 0;}#iz9o{background-color:grey;}.hamburger1{display:none;}.bar1{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}#i222rh{text-align:left;}#igczvy{height:10px;width:10px;border-radius:100%;background-color:black;}#iabfh7{height:10px;width:10px;border-radius:100%;background-color:black;}#iuttoh{height:10px;width:10px;border-radius:100%;background-color:black;}#i001pf{height:80vh;}#imzzzd{height:80vh;}#ijo0h9{height:80vh;}#if2a0c{background-color:white;}#iaht7k{height:100px;width:100px;}#i0nk0v{height:100px;width:100px;}#id20tg{height:100px;width:100px;}#i8nlpi{font-family:Arial, Helvetica, sans-serif;font-size:larger;opacity:70%;}#i4cz7d{background-color:#607980;}#iiv45e{background-color:rgba(0, 0, 0, 0.05);}.shopiana-bg-white{background-color:white;}@keyframes fadeEffect{from{opacity:0;}to{opacity:1;}}@media only screen and (max-width: 992px){.hamburger1{display:block;cursor:pointer;}.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}.hamburger2.active .bar2:nth-child(2){opacity:0;}.hamburger2.active .bar2:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger2.active .bar2:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}* { box-sizing: border-box; } body {margin: 0;}.hamburger2{display:none;}.bar2{display:block;width:25px;height:3px;margin:5px auto;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;background-color:#101010;}#iryk0g{height:10px;width:10px;border-radius:100%;background-color:black;}#is9une{height:10px;width:10px;border-radius:100%;background-color:black;}#i23l8j{height:10px;width:10px;border-radius:100%;background-color:black;}#ikxduw{height:80vh;}#irdrm7{height:80vh;}#i6vnw3{height:80vh;}@keyframes fadeEffect{from{opacity:0;}to{opacity:1;}}@media only screen and (max-width: 992px){.hamburger1.active .bar1:nth-child(2){opacity:0;}.hamburger1.active .bar1:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger1.active .bar1:nth-child(3){transform:translateY(-8px) rotate(-45deg);}.hamburger2{display:block;cursor:pointer;}.hamburger2.active .bar2:nth-child(2){opacity:0;}.hamburger2.active .bar2:nth-child(1){transform:translateY(8px) rotate(45deg);}.hamburger2.active .bar2:nth-child(3){transform:translateY(-8px) rotate(-45deg);}}
